@@ -1,0 +1,26 @@
+# NUNCA versionar material com direitos autorais / dados do jogo
+*.bin
+*.iso
+*.cue
+*.7z
+*.zip
+*.img
+*.ccd
+*.sub
+# dumps de memória/emulador
+*dump*/
+*_RAM_*
+*VRAM*
+*.dmp
+# arquivos extraídos do jogo (script original em inglês, gráficos, áudio)
+files/
+MAP*.json
+!translation/dialogos/pt_MAP*.json
+# temporários
+__pycache__/
+*.pyc
+_test_*
+*.log
+
+# EXCEÇÃO: o patch da tradução (só as diferenças) PODE ser versionado
+!release/*.aopatch

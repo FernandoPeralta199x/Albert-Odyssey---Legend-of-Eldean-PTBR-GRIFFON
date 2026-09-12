@@ -1,0 +1,56 @@
+================================================================
+  ALBERT ODYSSEY: LEGEND OF ELDEAN  —  Tradução PT-BR
+  (Sega Saturn, versão USA — T-12705H)
+================================================================
+
+O QUE É
+-------
+Tradução para Português do Brasil dos DIÁLOGOS e do TEXTO DE SISTEMA
+do jogo:
+  - 52 mapas de diálogo (3.260 falas): abertura, cidades, NPCs, cenas
+  - Itens, armas, magias, nomes de monstros, status e mensagens de batalha
+
+Este pacote NÃO contém o jogo. Ele é um PATCH que você aplica sobre a
+SUA cópia original do jogo.
+
+DO QUE VOCÊ PRECISA
+-------------------
+1. Sua cópia original em BIN/CUE (versão USA), com a
+   "Albert Odyssey - Legend of Eldean (USA) (Track 01).bin"
+   e as 21 faixas de áudio + o arquivo .cue.
+2. Python 3 instalado (python.org).
+3. A BIOS do Sega Saturn configurada no seu emulador
+   (ex.: Ymir, Mednafen) — a BIOS não acompanha este patch.
+
+COMO APLICAR
+------------
+1. Coloque "ao_patch_apply.py" e "AlbertOdyssey_PTBR.aopatch" na mesma pasta.
+2. Abra o terminal nessa pasta e rode:
+
+     python ao_patch_apply.py "CAMINHO/PARA/Albert Odyssey - Legend of Eldean (USA) (Track 01).bin"
+
+   (Ele valida sua cópia pelo checksum e substitui a Track 01 pela versão
+    traduzida. Faça um backup antes, por garantia.)
+
+3. Abra o arquivo .cue no seu emulador de Saturn (com a BIOS configurada).
+   Pronto — os diálogos e menus estarão em português.
+
+   Dica: para não sobrescrever o original, gere uma cópia:
+     python ao_patch_apply.py "...Track 01).bin"  "Track 01 PT-BR.bin"
+   e ajuste o .cue para apontar para esse arquivo.
+
+OBSERVAÇÕES
+-----------
+- ACENTOS: a fonte original do jogo não possui glifos acentuados, então
+  os acentos aparecem "chapados" (ex.: "voce" no lugar de "você"). Isso é
+  comum em traduções de fã. Uma versão futura (v2) pretende adicionar os
+  acentos editando a fonte do jogo.
+- O texto foi condensado onde necessário para caber no espaço original,
+  preservando o sentido e o tom.
+
+CRÉDITOS
+--------
+- Jogo original © 1996 Sunsoft / Sun Corporation
+- Localização em inglês © 1997 Working Designs
+- Tradução PT-BR: Griffon BR
+================================================================
