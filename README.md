@@ -1,6 +1,19 @@
-# Albert Odyssey: Legend of Eldean — Tradução PT-BR (GRIFFON)
+<div align="center">
 
-Tradução para **Português do Brasil** de *Albert Odyssey: Legend of Eldean* (Sega Saturn, versão USA — `T-12705H`).
+# 🐉 ALBERT ODYSSEY: LEGEND OF ELDEAN
+### Tradução PT-BR • por **GRIFFON BR**
+
+![Plataforma](https://img.shields.io/badge/Plataforma-Sega%20Saturn-2038a6?style=for-the-badge)
+![Idioma](https://img.shields.io/badge/Idioma-Portugu%C3%AAs%20BR-009c3b?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Jog%C3%A1vel-ffcc29?style=for-the-badge)
+![Vers%C3%A3o](https://img.shields.io/badge/Vers%C3%A3o-v1-lightgrey?style=for-the-badge)
+
+*RPG de Sega Saturn (1997) traduzido do inglês para o português do Brasil —*
+*52 mapas de diálogo e todo o texto de menus, itens, magias e batalha.*
+
+</div>
+
+---
 
 > Este repositório **não contém o jogo**. Distribui apenas a tradução como um **patch** que você aplica sobre a sua própria cópia original.
 
