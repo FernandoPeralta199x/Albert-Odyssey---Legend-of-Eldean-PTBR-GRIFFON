@@ -72,6 +72,7 @@ def patch(out_bin):
         d=json.load(open(jf,encoding='utf-8')); fn=d['file']
         items=d.get('items')
         if not items: continue
+        if 'keep' not in items[0] or 'space' not in items[0]: continue  # formato de outro pipeline (ex TWN.BIN)
         iso=[k for k in files if k.split('/')[-1]==fn]
         if not iso: continue
         lba,size=files[iso[0]]

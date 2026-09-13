@@ -199,6 +199,11 @@ def rebuild(b, translations=None):
             nt=map_off(tgt)
             struct.pack_into('>I', newb, ppos, nt+BASE)  # tabela fixa -> ppos inalterado
             fixed_ct+=1
+    # CRÍTICO: nunca alterar bytes a partir de loaded_len (dword1 do header) — além dessa
+    # fronteira ficam dados de outras seções que não são carregadas nem devem ser tocadas.
+    loaded=struct.unpack('>I', orig[4:8])[0]
+    if 0 < loaded < len(orig):
+        newb[loaded:]=orig[loaded:]
     info['ok']=True; info['ptrs_fixed']=fixed_ct
     return bytes(newb), info
 
