@@ -1,8 +1,6 @@
 <div align="center">
 
-<p>
-  <img src="https://raw.githubusercontent.com/FernandoPeralta199x/Albert-Odyssey---Legend-of-Eldean-PTBR-GRIFFON/main/assets/albert-odyssey-cover.jpg" alt="Albert Odyssey: Legend of Eldean — Tradução PT-BR GRIFFON BR" width="900">
-</p>
+![Albert Odyssey: Legend of Eldean — Tradução PT-BR GRIFFON BR](https://github.com/FernandoPeralta199x/Albert-Odyssey---Legend-of-Eldean-PTBR-GRIFFON/blob/main/assets/albert-odyssey-cover.jpg?raw=true)
 
 # 🐉 ALBERT ODYSSEY: LEGEND OF ELDEAN
 ### Tradução PT-BR • por **GRIFFON BR**
