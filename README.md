@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="assets/albert-odyssey-cover.jpg" alt="Albert Odyssey: Legend of Eldean — Tradução PT-BR GRIFFON BR" width="900">
+
 # 🐉 ALBERT ODYSSEY: LEGEND OF ELDEAN
 ### Tradução PT-BR • por **GRIFFON BR**
 
