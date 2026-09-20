@@ -29,7 +29,22 @@ Todo o **texto visível** do jogo está em português:
 
 Nomes próprios são mantidos no original de propósito (praxe de localização): lugares e katanas/armas japonesas icônicas (MURASAME, KOTETU, IZAYOI…).
 
-## 📦 Como aplicar (release)
+## 📦 Como aplicar
+
+Este release **não contém o jogo** — é só o **patch**, que você aplica sobre a **sua** cópia original (Sega Saturn, versão USA). Escolha um dos dois jeitos:
+
+### 🖥️ Jeito fácil (recomendado) — Griffon PATCH (Windows)
+
+Aplicador com interface, sem instalar nada.
+
+1. Baixe o **[`GriffonPATCH.exe`](../../releases/latest)** (o patch já vem embutido).
+2. Abra o programa e selecione o **seu jogo**: o `.7z` com as faixas, uma pasta, o `.bin` ou o `.cue`.
+3. Clique em **APLICAR TRADUÇÃO**. Ele valida sua cópia por checksum, aplica a tradução e gera a imagem pronta (`… (Track 01).bin` + `.cue`), verificando no fim se está tudo OK.
+4. Abra o `.cue` gerado no emulador (Ymir, Mednafen, Kronos, Beetle Saturn…) com a **BIOS do Saturn**.
+
+> ⚠️ O Windows pode mostrar um aviso do **SmartScreen** (é um `.exe` sem assinatura digital). Clique em **Mais informações → Executar assim mesmo**.
+
+### 🐍 Alternativa — script Python
 
 Baixe o `.zip` da [**última release**](../../releases/latest) (ou use a pasta [`release/`](release/)):
 
