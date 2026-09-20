@@ -77,15 +77,21 @@ def patch(out_bin):
         if not iso: continue
         lba,size=files[iso[0]]
         with open(out_bin,'rb') as f: data=bytearray(ao_iso.read_range(f,lba,size))
+        orig=bytes(data)  # bytes originais deste arquivo (antes de qualquer patch)
         changed=False
         for it in items:
             pt=it.get('pt','').strip()
             if not pt or it['keep']: continue
             off=int(it['off'],16); sp=it['space']
+            # NUNCA invadir metadados: 0xff no original marca fim do campo de nome.
+            # (max_space contava 0xff como padding e zerava flags de item -> crash.)
+            ff=next((k for k in range(off,off+sp) if orig[k]==0xff), None)
+            if ff is not None: sp=ff-off
+            if sp<=0: continue
             enc=ao_codec.fold_accents(pt).encode('ascii','replace')
             if len(enc)>sp-1:  # -1 p/ o null
                 toolong.append((fn,it['off'],it['en'],pt,len(enc),sp)); enc=enc[:sp-1]
-            # escreve pt + null + preserva resto do padding
+            # escreve pt + null + preserva resto do padding (e o 0xff de metadado)
             for i in range(sp): data[off+i]=0
             data[off:off+len(enc)]=enc
             changed=True
