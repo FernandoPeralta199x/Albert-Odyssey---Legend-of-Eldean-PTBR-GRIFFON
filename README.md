@@ -8,7 +8,7 @@
 ![Plataforma](https://img.shields.io/badge/Plataforma-Sega%20Saturn-2038a6?style=for-the-badge)
 ![Idioma](https://img.shields.io/badge/Idioma-Portugu%C3%AAs%20BR-009c3b?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Jog%C3%A1vel-ffcc29?style=for-the-badge)
-![Versão](https://img.shields.io/badge/Vers%C3%A3o-v1.2-lightgrey?style=for-the-badge)
+![Versão](https://img.shields.io/badge/Vers%C3%A3o-v2.0-lightgrey?style=for-the-badge)
 
 *RPG de Sega Saturn (1997) traduzido do inglês para o português do Brasil —*
 *todo o texto visível do jogo: diálogos, menus, itens, magias, loja e batalha.*
@@ -60,7 +60,7 @@ Detalhes em [`release/LEIA-ME.txt`](release/LEIA-ME.txt).
 
 ### Checksums (SHA-256 · Track 01)
 - Original esperado: `109dfbe626021f7a…`
-- Resultado traduzido (v1.2): `246e851f1881ffc3…`
+- Resultado traduzido (v2.0): `bf84bac4965c2e19…`
 
 ## 🗂️ Estrutura
 
@@ -80,14 +80,15 @@ Detalhes em [`release/LEIA-ME.txt`](release/LEIA-ME.txt).
 
 ## 🕓 Histórico de versões
 
+- **v2.0** — **Acentos completos**: a fonte do jogo foi editada e os glifos acentuados agora aparecem no diálogo **e** nos menus/itens/status (`você`, `coração`, `LÂMINA`, `CAÇA-DEMÔNIOS`). Inclui uma **revisão de localização profissional** (fidelidade, naturalidade, coerência de gênero, humor preservado) e a correção do alinhamento da tela de Status.
 - **v1.2** — **Correção de bug crítico**: usar o item *Óculos Escuros* na batalha travava o jogo (a tradução havia apagado um byte de metadado que marca o item como "não usável em batalha"). Restaurado o metadado de todos os itens. Recomendada para todos.
 - **v1.1** — CIRRUS reescrito com um tom mais **sério e solene** de mentor (menos deboche, mais dignidade); pequenos ajustes de texto.
 - **v1.0** — Tradução completa do texto visível: diálogos, falas órfãs, e todo o texto de sistema/UI (menus, itens, loja, batalha).
 
 ## ⚠️ Limitações conhecidas
 
-- **Acentos**: a fonte do jogo não tem glifos acentuados, então os acentos aparecem "chapados" (`voce` em vez de `você`). O texto já está escrito com acentos; uma **v2** pretende editar a fonte para exibi-los.
 - **Tela de título**: o logo e o crédito do rodapé são gráficos embutidos (não texto) e permanecem no original.
+- **Abertura falada**: a narração da introdução (com voz) não tem legenda — é uma animação pré-renderizada sem camada de texto nativa.
 - Alguns textos foram condensados para caber no espaço original, preservando o sentido.
 
 ## 📜 Créditos
