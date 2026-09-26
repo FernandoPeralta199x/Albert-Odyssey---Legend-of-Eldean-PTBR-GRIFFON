@@ -5,10 +5,14 @@
 
 O QUE É
 -------
-Tradução para Português do Brasil dos DIÁLOGOS e do TEXTO DE SISTEMA
-do jogo:
-  - 52 mapas de diálogo (3.260 falas): abertura, cidades, NPCs, cenas
-  - Itens, armas, magias, nomes de monstros, status e mensagens de batalha
+Tradução COMPLETA para Português do Brasil de todo o texto visível do jogo:
+  - 52 mapas de diálogo (3.260 falas) + falas de ação/loja (TWN) + 67 falas
+    "órfãs" (nascentes de cura, poços, portas, menus "Beber/Deixar", intro)
+  - Menus, itens, armas, consumíveis, magias, status e mensagens de batalha
+  - Diálogo de loja (compra/venda), prompts e telas de sistema
+
+Nomes próprios são mantidos no original de propósito (praxe de localização):
+lugares e katanas/armas japonesas icônicas (MURASAME, KOTETU, IZAYOI, etc.).
 
 Este pacote NÃO contém o jogo. Ele é um PATCH que você aplica sobre a
 SUA cópia original do jogo.
@@ -39,12 +43,17 @@ COMO APLICAR
      python ao_patch_apply.py "...Track 01).bin"  "Track 01 PT-BR.bin"
    e ajuste o .cue para apontar para esse arquivo.
 
+NOVIDADES DA v2.0
+-----------------
+- ACENTOS COMPLETOS: a fonte do jogo foi editada para incluir os glifos
+  acentuados. Agora aparece "você", "coração", "não", "LÂMINA", "BÁLSAMO",
+  "CAÇA-DEMÔNIOS" — tanto no diálogo quanto nos menus/itens/status.
+- REVISÃO DE LOCALIZAÇÃO PROFISSIONAL: passada de fidelidade, naturalidade
+  e coerência em todo o texto, preservando o humor do original.
+- Correção do alinhamento do bloco de atributos na tela de Status.
+
 OBSERVAÇÕES
 -----------
-- ACENTOS: a fonte original do jogo não possui glifos acentuados, então
-  os acentos aparecem "chapados" (ex.: "voce" no lugar de "você"). Isso é
-  comum em traduções de fã. Uma versão futura (v2) pretende adicionar os
-  acentos editando a fonte do jogo.
 - O texto foi condensado onde necessário para caber no espaço original,
   preservando o sentido e o tom.
 
